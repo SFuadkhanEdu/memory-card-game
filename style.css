@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 800px;
+  border: 1px solid black;
+  perspective: 1000px;
+  margin: 50px auto;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid black;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 1.5rem;
+  background-color: black;
+  color: white;
+  margin-left: 666px;
+}
+.card_container {
+  width: 199px;
+  height: 200px;
+  position: relative;
+}
+.item {
+  background-color: aqua;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  transition: transform 300ms;
+}
+
+.hidden {
+  width: 100%;
+  border: 1px solid black;
+  background-color: blueviolet;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transition: transform 300ms;
+  transform: rotateY(90deg);
+}
